@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mr. SAM</title>
+    <meta http-equiv="refresh" content="0; url=https://mrsam.me/">
+    <link rel="canonical" href="https://mrsam.me/">
+    <title>Redirecting...</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
     <style>
-
         body {
-            font-family: 'Source Code Pro', monospace; 
-            background: linear-gradient(135deg, #1a1a1a, #000000); 
-            color: #00ff00; 
+            font-family: 'Source Code Pro', monospace;
+            background: linear-gradient(135deg, #1a1a1a, #000000);
+            color: #00ff00;
             text-align: center;
-            display: flex; 
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            overflow: hidden; 
-
-            transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
-            transform: translateY(0); 
+            overflow: hidden;
         }
 
         body::before {
@@ -30,106 +28,50 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAAAeQoEGAAAADUlEQVQIW2NkYGDYDwAAAgABGjA/6wAAAABJRU5ErkJggg==') repeat; 
-            opacity: 0.05; 
-            pointer-events: none; 
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAAAeQoEGAAAADUlEQVQIW2NkYGDYDwAAAgABGjA/6wAAAABJRU5ErkJggg==') repeat;
+            opacity: 0.05;
+            pointer-events: none;
             z-index: -1;
         }
 
-
-        body.fading-out {
-            opacity: 0;
-            transform: translateY(-50px); 
-        }
-
-
         h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; 
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
             letter-spacing: 2px;
         }
 
         p {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-            color: #00cc00; 
+            font-size: 1.1em;
+            color: #00cc00;
         }
 
-        .redirect-button {
-            padding: 15px 40px;
-            font-size: 1.5em;
-            cursor: pointer;
-            background-color: #007bff; 
-            color: white;
-            border: 2px solid #00ccff; 
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 204, 255, 0.5); 
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 1px;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+        .spinner {
+            margin-top: 20px;
+            width: 28px;
+            height: 28px;
+            border: 3px solid rgba(0,255,0,0.2);
+            border-top-color: #00ff00;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
         }
 
-        .redirect-button:hover {
-            background-color: #0056b3; 
-            box-shadow: 0 0 25px rgba(0, 204, 255, 0.8), 0 0 5px rgba(0, 255, 0, 0.5); 
-            transform: translateY(-2px);
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
-
-        .redirect-button:active {
-            transform: translateY(0);
-            box-shadow: 0 0 10px rgba(0, 204, 255, 0.3);
-        }
-
-        /* --- Optional: Subtle Glitch Effect on Fade-Out --- */
-        /* This is a more advanced effect, uncomment to try it */
-        /*
-        body.fading-out::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-            animation: glitch-overlay 0.7s forwards;
-            pointer-events: none;
-            z-index: 10000;
-        }
-
-        @keyframes glitch-overlay {
-            0% { clip: rect(0, 9999px, 0, 0); opacity: 0; }
-            10% { clip: rect(10px, 9999px, 20px, 0); opacity: 0.8; }
-            20% { clip: rect(30px, 9999px, 40px, 0); opacity: 0.5; }
-            30% { clip: rect(50px, 9999px, 60px, 0); opacity: 0.9; }
-            40% { clip: rect(70px, 9999px, 80px, 0); opacity: 0.6; }
-            50% { clip: rect(90px, 9999px, 100px, 0); opacity: 0.7; }
-            60% { clip: rect(110px, 9999px, 120px, 0); opacity: 0.4; }
-            70% { clip: rect(130px, 9999px, 140px, 0); opacity: 0.8; }
-            80% { clip: rect(150px, 9999px, 160px, 0); opacity: 0.5; }
-            90% { clip: rect(170px, 9999px, 180px, 0); opacity: 0.9; }
-            100% { clip: rect(0, 9999px, 9999px, 0); opacity: 0; }
-        }
-        */
     </style>
 </head>
 <body>
 
-    <h1><span style="color:#00ff00;">// ACCESS_POINT_01 //</span></h1>
-
-    <button id="myButton" class="redirect-button"> کلیک کنید </button>
+    <h1>// ACCESS_POINT_01 //</h1>
+    <p>Automatically redirecting to another address...</p>
+    <div class="spinner"></div>
+    <noscript>
+        <p>If you are not redirected automatically, <a href="https://mrsam.me/" style="color:#00ccff;">click here</a>.</p>
+    </noscript>
 
     <script>
-        document.getElementById('myButton').addEventListener('click', function() {
-            const destinationURL = 'https://nullerror.ir/'; 
-
-            document.body.classList.add('fading-out');
-
-            setTimeout(function() {
-                window.location.href = destinationURL;
-            }, 700);
-        });
+        window.location.replace('https://mrsam.me/');
     </script>
 
 </body>
